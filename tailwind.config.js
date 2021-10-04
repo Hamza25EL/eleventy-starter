@@ -1,11 +1,13 @@
 // const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   purge: ['./src/**/*.{njk,md,js}'],
   darkMode: false, // or 'media' or 'class'
   mode: 'jit',
   theme: {
     extend: {
+      colors: {
+        'regal-blue': '#FFFFAA',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -20,3 +22,4 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography')],
 }
+
